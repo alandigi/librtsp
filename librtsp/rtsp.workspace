@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="librtsp/librtsp.cbp" />
+		<Project filename="testprj/test.cbp" active="1">
+			<Depends filename="librtsp/librtsp.cbp" />
+		</Project>
+	</Workspace>
+</CodeBlocks_workspace_file>
