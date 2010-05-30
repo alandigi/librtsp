@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "librtsp", "librtsp\librtsp.vcproj", "{552F6AF5-005E-4D5C-BF76-AC43B4AA628A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "testprj\test.vcproj", "{7C8FEB6B-0106-49EF-98C9-49B0D325983A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{552F6AF5-005E-4D5C-BF76-AC43B4AA628A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{552F6AF5-005E-4D5C-BF76-AC43B4AA628A}.Debug|Win32.Build.0 = Debug|Win32
+		{552F6AF5-005E-4D5C-BF76-AC43B4AA628A}.Release|Win32.ActiveCfg = Release|Win32
+		{552F6AF5-005E-4D5C-BF76-AC43B4AA628A}.Release|Win32.Build.0 = Release|Win32
+		{7C8FEB6B-0106-49EF-98C9-49B0D325983A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7C8FEB6B-0106-49EF-98C9-49B0D325983A}.Debug|Win32.Build.0 = Debug|Win32
+		{7C8FEB6B-0106-49EF-98C9-49B0D325983A}.Release|Win32.ActiveCfg = Release|Win32
+		{7C8FEB6B-0106-49EF-98C9-49B0D325983A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

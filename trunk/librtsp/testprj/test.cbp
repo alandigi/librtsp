@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="test" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="test" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+					<Add directory="../librtsp/inc" />
+					<Add directory="../contrib/inc" />
+					<Add directory="../contrib/inc/ffmpeg" />
+				</Compiler>
+				<Linker>
+					<Add library="../librtsp.a" />
+					<Add library="../contrib/lib/libavformat.a" />
+					<Add library="../contrib/lib/libavcodec.a" />
+					<Add library="../contrib/lib/libavutil.a" />
+					<Add library="../contrib/lib/libswscale.a" />
+					<Add library="../contrib/lib/libavdevice.a" />
+					<Add library="../contrib/lib/libpcre++d.a" />
+					<Add library="pcre" />
+					<Add library="../contrib/lib/libjrtpd.a" />
+					<Add library="pthread" />
+					<Add library="m" />
+					<Add library="z" />
+					<Add library="bz2" />
+					<Add directory="../contrib/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="test" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="../librtsp/inc" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="../librtsp.a" />
+					<Add library="pthread" />
+					<Add library="../contrib/lib/libpcre++.a" />
+					<Add library="../contrib/lib/libjrtp.a" />
+					<Add library="../contrib/lib/libavformat.a" />
+					<Add library="../contrib/lib/libavcodec.a" />
+					<Add library="../contrib/lib/libavutil.a" />
+					<Add library="../contrib/lib/libswscale.a" />
+					<Add library="../contrib/lib/libavdevice.a" />
+					<Add library="pcre" />
+					<Add library="m" />
+					<Add library="z" />
+					<Add library="bz2" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-ansi" />
+			<Add option="-fexceptions" />
+			<Add directory="../librtsp/inc" />
+			<Add directory="../contrib/inc" />
+			<Add directory="../contrib/inc/ffmpeg" />
+		</Compiler>
+		<Linker>
+			<Add directory="../contrib/lib" />
+		</Linker>
+		<Unit filename="main.cpp" />
+		<Unit filename="test.cpp" />
+		<Unit filename="test.h" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<lib_finder disable_auto="1" />
+			<debugger />
+			<AutoVersioning>
+				<Scheme minor_max="10" build_max="0" rev_max="0" rev_rand_max="10" build_times_to_increment_minor="100" />
+				<Settings autoincrement="1" date_declarations="1" do_auto_increment="0" ask_to_increment="0" language="C++" svn="0" svn_directory="" header_path="version.h" />
+				<Changes_Log show_changes_editor="0" app_title="released version %M.%m.%b of %p" changeslog_path="ChangesLog.txt" />
+			</AutoVersioning>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="librtsp" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../librtsp" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-ansi" />
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+					<Add directory="inc" />
+					<Add directory="../contrib/inc" />
+					<Add directory="../contrib/inc/ffmpeg" />
+				</Compiler>
+				<Linker>
+					<Add library="pthread" />
+					<Add library="../libpcre++.a" />
+					<Add library="../contrib/lib/libjrtpd.a" />
+					<Add directory="../contrib/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="../librtsp" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add directory="inc" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="pthread" />
+					<Add library="../libpcre++.a" />
+					<Add library="../contrib/lib/libjrtp.a" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="inc" />
+			<Add directory="../contrib/inc" />
+			<Add directory="../contrib/inc/ffmpeg" />
+		</Compiler>
+		<Linker>
+			<Add library="../contrib/lib/libavformat.a" />
+			<Add library="../contrib/lib/libavcodec.a" />
+			<Add library="../contrib/lib/libavutil.a" />
+			<Add library="../contrib/lib/libswscale.a" />
+			<Add library="../contrib/lib/libavdevice.a" />
+			<Add library="pthread" />
+			<Add library="../libpcre++.a" />
+			<Add library="pcre" />
+			<Add directory="../contrib/lib" />
+		</Linker>
+		<Unit filename="inc/DemuxSource.h" />
+		<Unit filename="inc/FileDemux.h" />
+		<Unit filename="inc/FileSource.h" />
+		<Unit filename="inc/G729DFileSource.h" />
+		<Unit filename="inc/G729DMediaSubSession.h" />
+		<Unit filename="inc/H264DemuxSource.h" />
+		<Unit filename="inc/H264FileSource.h" />
+		<Unit filename="inc/H264MediaSubSession.h" />
+		<Unit filename="inc/InetAddr.h" />
+		<Unit filename="inc/ListenSocket.h" />
+		<Unit filename="inc/Logger.h" />
+		<Unit filename="inc/MP2DemuxSource.h" />
+		<Unit filename="inc/MP3FileSource.h" />
+		<Unit filename="inc/MP3MediaSubSession.h" />
+		<Unit filename="inc/MPEG4DemuxSource.h" />
+		<Unit filename="inc/MPEG4FileSource.h" />
+		<Unit filename="inc/MPEG4MediaSubSession.h" />
+		<Unit filename="inc/MediaDemux.h" />
+		<Unit filename="inc/MediaSource.h" />
+		<Unit filename="inc/RTSPListener.h" />
+		<Unit filename="inc/RTSPPacket.h" />
+		<Unit filename="inc/RTSPPacketBuilder.h" />
+		<Unit filename="inc/RTSPServer.h" />
+		<Unit filename="inc/RTSPSession.h" />
+		<Unit filename="inc/RTSPSessionBase.h" />
+		<Unit filename="inc/ServerMediaSubsession.h" />
+		<Unit filename="inc/ServerMediasession.h" />
+		<Unit filename="inc/SocketBase.h" />
+		<Unit filename="inc/TCPSocket.h" />
+		<Unit filename="inc/UDPSocket.h" />
+		<Unit filename="inc/ffmpegutil.h" />
+		<Unit filename="inc/librtsp.h" />
+		<Unit filename="inc/rtspCommon.h" />
+		<Unit filename="inc/rtsperrors.h" />
+		<Unit filename="inc/util.h" />
+		<Unit filename="src/DemuxSource.cpp" />
+		<Unit filename="src/FileDemux.cpp" />
+		<Unit filename="src/FileSource.cpp" />
+		<Unit filename="src/G729DFileSource.cpp" />
+		<Unit filename="src/G729DMediaSubSession.cpp" />
+		<Unit filename="src/H264DemuxSource.cpp" />
+		<Unit filename="src/H264FileSource.cpp" />
+		<Unit filename="src/H264MediaSubSession.cpp" />
+		<Unit filename="src/InetAddr.cpp" />
+		<Unit filename="src/ListenSocket.cpp" />
+		<Unit filename="src/Logger.cpp" />
+		<Unit filename="src/MP2DemuxSource.cpp" />
+		<Unit filename="src/MP3FileSource.cpp" />
+		<Unit filename="src/MP3MediaSubSession.cpp" />
+		<Unit filename="src/MPEG4DemuxSource.cpp" />
+		<Unit filename="src/MPEG4FileSource.cpp" />
+		<Unit filename="src/MPEG4MediaSubSession.cpp" />
+		<Unit filename="src/MediaDemux.cpp" />
+		<Unit filename="src/MediaSource.cpp" />
+		<Unit filename="src/RTSPListener.cpp" />
+		<Unit filename="src/RTSPPacket.cpp" />
+		<Unit filename="src/RTSPPacketBuilder.cpp" />
+		<Unit filename="src/RTSPServer.cpp" />
+		<Unit filename="src/RTSPSession.cpp" />
+		<Unit filename="src/RTSPSessionBase.cpp" />
+		<Unit filename="src/ServerMediaSubsession.cpp" />
+		<Unit filename="src/ServerMediasession.cpp" />
+		<Unit filename="src/SocketBase.cpp" />
+		<Unit filename="src/TCPSocket.cpp" />
+		<Unit filename="src/UDPSocket.cpp" />
+		<Unit filename="src/ffmpegutil.cpp" />
+		<Unit filename="src/librtsp.cpp" />
+		<Unit filename="src/rtsperrors.cpp" />
+		<Unit filename="src/util.cpp" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<lib_finder disable_auto="1" />
+			<debugger />
+			<AutoVersioning>
+				<Scheme minor_max="10" build_max="0" rev_max="0" rev_rand_max="10" build_times_to_increment_minor="100" />
+				<Settings autoincrement="1" date_declarations="1" do_auto_increment="0" ask_to_increment="0" language="C++" svn="0" svn_directory="" header_path="version.h" />
+				<Changes_Log show_changes_editor="0" app_title="released version %M.%m.%b of %p" changeslog_path="ChangesLog.txt" />
+			</AutoVersioning>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
